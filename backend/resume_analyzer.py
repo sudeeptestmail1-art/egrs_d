@@ -46,7 +46,11 @@ for _name, _path in [
         nltk.download(_name)
 
 # ── ChromaDB ──────────────────────────────────────────────────────────────────
-_chroma = chromadb.PersistentClient(path="./resume_database")
+# Use in-memory mode on cloud (Render free tier has ephemeral storage anyway)
+if os.getenv("CHROMADB_EPHEMERAL", "false").lower() in ("true", "1", "yes"):
+    _chroma = chromadb.EphemeralClient()
+else:
+    _chroma = chromadb.PersistentClient(path="./resume_database")
 collection = _chroma.get_or_create_collection(name="resumes_and_jd")
 
 
