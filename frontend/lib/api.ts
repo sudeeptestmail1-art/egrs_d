@@ -1,6 +1,12 @@
 // lib/api.ts
 
-const BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+// In production, route through Next.js rewrite proxy (/api) to avoid
+// cross-origin requests being blocked by ad blockers / browser extensions.
+// In development, hit the backend directly for faster iteration.
+const BASE =
+  typeof window !== "undefined" && process.env.NODE_ENV === "production"
+    ? "/api"
+    : (process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000");
 
 function authHeaders(token?: string | null): HeadersInit {
   return token ? { Authorization: `Bearer ${token}` } : {};
