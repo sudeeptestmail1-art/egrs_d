@@ -7,10 +7,14 @@ Screen multiple resumes against a job description in seconds. Candidates are ran
 
 
 
-Read the complete documentation here, 
 
-[🎥 Click here to watch the project demo video on Google Drive](https://drive.google.com/file/d/1H61-PfdSDcKCQ9wOlYaJO486_0Okk98o/view?usp=sharing)
----
+<div align="center">
+
+[![Read Documentation](https://img.shields.io/badge/Read-Documentation-0077b5?style=for-the-badge&logo=gitbook&logoColor=white)](https://drive.google.com/file/d/1osdvlCkNPrFsDm0b2XJOvbO_XCOPyxi0/view?usp=sharing)
+&nbsp;&nbsp;
+[![Watch Demo](https://img.shields.io/badge/Watch-Demo-red?style=for-the-badge&logo=youtube&logoColor=white)](https://drive.google.com/file/d/1H61-PfdSDcKCQ9wOlYaJO486_0Okk98o/view?usp=sharing)
+
+</div>
 
 ## Table of Contents
 
