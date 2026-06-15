@@ -4,6 +4,12 @@
 
 Screen multiple resumes against a job description in seconds. Candidates are ranked by a composite NLP + AI score, with name and college automatically extracted from each resume. Every analysis run is saved to Supabase and retrievable from the History page.
 
+
+
+
+Read the complete documentation here, 
+
+[🎥 Click here to watch the project demo video on Google Drive](https://drive.google.com/file/d/1H61-PfdSDcKCQ9wOlYaJO486_0Okk98o/view?usp=sharing)
 ---
 
 ## Table of Contents
